@@ -39,6 +39,8 @@
   </ul>
 </div>
 
+
+
   <div id='entrada_saida' class='page'>
     <h2>Controle de Estoque</h2>
 
@@ -74,23 +76,29 @@
     <div id='itens_holder' class='fixed_right'>
       <h2>Mercadoria: Alfa</h2>
 
-      <ul id='itens'></ul>
+      <ul id='itens'>
+        <table class='output_table'>
+          <tr>
+            <th></th>
+            <th colspan='3'>Entrada</th>
+            <th colspan='3'>Saída</th>
+            <th colspan='3'>Saldo</th>
+          </tr>
+          <tr>
+            <th>Data</th>
+            <th>Qtd</th>
+            <th>V. Unit.</th>
+            <th>V. Total</th>
+            <th>Qtd</th>
+            <th>V. Unit.</th>
+            <th>V. Total</th>
+            <th>Qtd</th>
+            <th>V. Unit.</th>
+            <th>V. Total</th>
+          </tr>
+        </table>
 
-
-      <div class='fixed_right_total' style='bottom: 100px'>
-        <div class='fixed_right_total_text'>Quantidade Total</div>
-        <div id='qtd_total' class='fixed_right_total_amount'>0</div>
-      </div>
-
-      <div class='fixed_right_total' style='bottom: 50px'>
-        <div class='fixed_right_total_text'>Valor Unitário Atual</div>
-        <div id='vUn_total' class='fixed_right_total_amount money_value'>0</div>
-      </div>
-
-      <div class='fixed_right_total'>
-        <div class='fixed_right_total_text'>Valor Total Atual</div>
-        <div id='valor_total' class='fixed_right_total_amount money_value'>0</div>
-      </div>
+      </ul>
 
     </div>
   </div>
@@ -99,7 +107,7 @@
 
   <div id='bottom_bar'>
     <button id='info-btn'>Info</button>
-    <div style='display: inline-block'>ImproviStok é uma marca da ImproviSoft. Todos os direitos reservados.</div>
+    <div style='display: inline-block'>ImproviSoft. Todos os direitos reservados.</div>
   </div>
   <script src='js/index.js'></script>
 </body>
